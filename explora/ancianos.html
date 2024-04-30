@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExploraEducativa - Adultos Mayores</title>
+    <style>
+        body {
+            font-family: 'Arial Black', sans-serif;
+            margin: 0;
+            padding: 0;
+            font-size: 24.5px;
+            background: url(black.jpg) no-repeat center center fixed;
+            background-size: cover;
+            color: #000000;
+        }
+
+        .content {
+            text-align: center;
+            color: #000000;
+        }
+
+        .logo {
+            width: 330px;
+            height: auto;
+        }
+
+        .font-size-icon {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            cursor: pointer;
+        }
+
+        .font-size-decrease-icon {
+            position: absolute;
+            top: 10px;
+            left: 50px;
+            cursor: pointer;
+        }
+
+        .category-links {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .category-link {
+            width: 300px;
+            padding: 20px;
+            margin: 10px;
+            background-color: #87CEEB;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .category-link h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .category-link p {
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="content">
+    <div class="header">
+        <img class="logo" src="logoexploraprincipal.png" alt="Logo de la Empresa">
+        <h1>Bienvenido a ExploraEducativa - Adultos Mayores</h1>
+        <p>ExploraEducativa es un espacio en línea diseñado para fomentar el aprendizaje y la exploración en adultos mayores.</p>
+    </div>
+
+    <!-- Iconos para cambiar tamaño de fuente -->
+    <div class="font-size-icon" onclick="increaseFontSize()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M11 3v5h5v2h-5v5H9v-5H4V8h5V3h2zM3 19h18v2H3v-2z"/></svg>
+    </div>
+
+    <div class="font-size-decrease-icon" onclick="decreaseFontSize()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M11 3v5h5v2h-5v5H9v-5H4V8h5V3h2zM3 19h18v2H3v-2z" transform="rotate(180 12 12)"/></svg>
+    </div>
+
+    <!-- Texto para descubrir tutoriales -->
+    <div class="discover-text">
+        <p>Descubre tutoriales, estas son las categorías:</p>
+    </div>
+
+    <!-- Enlaces a las categorías de tutoriales -->
+    <div class="category-links">
+        <div class="category-link" onclick="window.location.href='tutorialesmatematicas.html'">
+            <h2>Tutoriales de Matemáticas</h2>
+            <p>Explora tutoriales de matemáticas diseñados para adultos mayores.</p>
+        </div>
+        <div class="category-link" onclick="window.location.href='tutoriales_espanol.html'">
+            <h2>Tutoriales de Español</h2>
+            <p>Descubre tutoriales de español para mejorar tus habilidades lingüísticas.</p>
+        </div>
+        <div class="category-link" onclick="window.location.href='tutoriales_espanol.html'">
+            <h2>Tutoriales de Español</h2>
+            <p>Descubre tutoriales de español para mejorar tus habilidades lingüísticas.</p>
+        </div>
+        <div class="category-link" onclick="window.location.href='tutoriales_espanol.html'">
+            <h2>Tutoriales de Español</h2>
+            <p>Descubre tutoriales de español para mejorar tus habilidades lingüísticas.</p>
+        </div>
+        <div class="category-link" onclick="window.location.href='tutoriales_espanol.html'">
+            <h2>Tutoriales de Español</h2>
+            <p>Descubre tutoriales de español para mejorar tus habilidades lingüísticas.</p>
+        </div>
+        <div class="category-link" onclick="window.location.href='tutoriales_espanol.html'">
+            <h2>Tutoriales de Español</h2>
+            <p>Descubre tutoriales de español para mejorar tus habilidades lingüísticas.</p>
+        </div>
+
+        <!-- Agrega más divs similares para otras categorías -->
+    </div>
+</div>
+
+<script>
+    function increaseFontSize() {
+        const body = document.querySelector('body');
+        const currentFontSize = parseInt(window.getComputedStyle(body).fontSize);
+        const newFontSize = currentFontSize + 2; // Aumentar en 2px, puedes ajustar según sea necesario
+        body.style.fontSize = newFontSize + 'px';
+    }
+
+    function decreaseFontSize() {
+        const body = document.querySelector('body');
+        const currentFontSize = parseInt(window.getComputedStyle(body).fontSize);
+        const newFontSize = currentFontSize - 2; // Disminuir en 2px, puedes ajustar según sea necesario
+        body.style.fontSize = newFontSize + 'px';
+    }
+</script>
+
+</body>
+</html>

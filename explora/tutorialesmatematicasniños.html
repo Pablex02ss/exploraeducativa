@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutoriales de Matemáticas - ExploraEducativa</title>
+    <style>
+        body {
+            font-family: 'Arial Black', sans-serif;
+            margin: 0;
+            padding: 0;
+            font-size: 18px;
+            background: url(fondomatematicaniños.png) no-repeat center center fixed;
+            background-size: cover;
+            color: #000000;
+        }
+
+        .content {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .logo {
+            width: 100%; /* Utiliza el ancho completo del contenedor */
+            max-width: 330px; /* Establece un ancho máximo para el logo */
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .topic {
+            display: block;
+            margin-top: 20px;
+            cursor: pointer;
+            background-color: #87CEEB;
+            color: #000000;
+            padding: 10px 20px;
+            border-radius: 8px;
+        }
+
+        .video-list {
+            text-align: left;
+            margin-top: 20px;
+            display: none; /* Inicialmente oculto */
+        }
+
+        .video-item {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #FFFFFF;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        video {
+            width: 60%; /* Ancho del video ajustado */
+            border-radius: 8px;
+            margin-right: 20px; /* Margen a la derecha del video */
+        }
+
+        .video-description {
+            flex-grow: 1;
+            text-align: left;
+        }
+
+        .video-description-text {
+            padding: 10px;
+        }
+
+        .youtube-link {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            margin-top: 10px;
+        }
+
+        .youtube-icon {
+            width: 50px; /* Tamaño del ícono de YouTube */
+            height: 50px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="content">
+    <img class="logo" src="logoexploraprincipal.png" alt="Logo de la Empresa">
+    <h1>Tutoriales de Matemáticas</h1>
+
+    <!-- Tema: Operaciones Básicas -->
+    <div class="topic" onclick="toggleVideoList('video-list-basicos')">Operaciones Básicas</div>
+    <div id="video-list-basicos" class="video-list">
+
+        <!-- Subtema: Sumas -->
+        <div class="video-item">
+            <video controls>
+                <source src="sumas.mp4" type="video/mp4">
+                Tu navegador no soporta el elemento de video.
+            </video>
+            <div class="video-description">
+                <div class="video-description-text">
+                    <h2>Introducción a las Sumas</h2>
+                    <p>Las sumas son una forma divertida de combinar o juntar cantidades para encontrar cuánto hay en total. Cuando sumamos dos o más números, estamos agregando o contando todo junto para obtener una cantidad más grande.</p>
+                    <p>Video de: HappyLearningEs</p>
+                    <div class="youtube-link">
+                        <a href="https://www.youtube.com/@HappyLearningEs">
+                            <img class="youtube-icon" src="happylearning.jpg" alt="Logo de YouTube">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Subtema: Restas -->
+        <div class="video-item">
+            <video controls>
+                <source src="restas.mp4" type="video/mp4">
+                Tu navegador no soporta el elemento de video.
+            </video>
+            <div class="video-description">
+                <div class="video-description-text">
+                    <h2>Introducción a las Restas</h2>
+                    <p>La resta es una operación matemática que utilizamos cuando queremos saber cuánto nos queda de algo después de quitar una parte. Imagina que tienes una caja llena de juguetes. Si tomas algunos de esos juguetes para compartirlos con un amigo, la resta te ayuda a descubrir cuántos juguetes quedan contigo después de dar algunos.</p>
+                    <p>Video de: HappyLearningEs</p>
+                    <div class="youtube-link">
+                        <a href="https://www.youtube.com/@HappyLearningEs">
+                            <img class="youtube-icon" src="happylearning.jpg" alt="Logo de YouTube">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Subtema: Multiplicaciones -->
+        <div class="video-item">
+            <video controls>
+                <source src="multiplicaciónes.mp4" type="video/mp4">
+                Tu navegador no soporta el elemento de video.
+            </video>
+            <div class="video-description">
+                <div class="video-description-text">
+                    <h2>Introducción a las Multiplicaciones</h2>
+                    <p>La multiplicación es una forma súper especial de sumar números muchas veces rápidamente. Por ejemplo, si quieres saber cuántas patas tienen 3 gatos, ¡puedes multiplicar! Cada gato tiene 4 patas, entonces multiplicamos 3 por 4.</p>
+                    <p>Video de: HappyLearningEs</p>
+                    <div class="youtube-link">
+                        <a href="https://www.youtube.com/@HappyLearningEs">
+                            <img class="youtube-icon" src="happylearning.jpg" alt="Logo de YouTube">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Subtema: Divisiones -->
+        <div class="video-item">
+            <video controls>
+                <source src="divisiones.mp4" type="video/mp4">
+                Tu navegador no soporta el elemento de video.
+            </video>
+            <div class="video-description">
+                <div class="video-description-text">
+                    <h2>Introducción a las Divisiones</h2>
+                    <p>La división es como compartir cosas de manera justa entre amigos. Imagina que tienes una bolsa con 12 caramelos y quieres repartirlos entre 4 amigos. La división te ayuda a saber cuántos caramelos recibirá cada amigo.</p>
+                    <p>Video de: HappyLearningEs</p>
+                    <div class="youtube-link">
+                        <a href="https://www.youtube.com/@HappyLearningEs">
+                            <img class="youtube-icon" src="happylearning.jpg" alt="Logo de YouTube">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Puedes agregar más subtemas aquí -->
+        
+    </div>
+
+    <!-- Otros temas -->
+    <div class="topic" onclick="toggleVideoList('video-list-geometria')">Tema 2</div>
+    <div id="video-list-geometria" class="video-list">
+        <!-- Agrega videos y descripciones para el tema de Geometría -->
+    </div>
+
+    <div class="topic" onclick="toggleVideoList('video-list-calculo')">Tema 3</div>
+    <div id="video-list-calculo" class="video-list">
+        <!-- Agrega videos y descripciones para el tema de Cálculo Diferencial -->
+    </div>
+
+    <!-- Puedes agregar más temas y subtemas según sea necesario -->
+</div>
+
+<script>
+    function toggleVideoList(videoListId) {
+        const videoList = document.getElementById(videoListId);
+        if (videoList) {
+            videoList.style.display = videoList.style.display === 'block' ? 'none' : 'block';
+        }
+    }
+</script>
+
+</body>
+</html>

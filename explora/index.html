@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExploraEducativa</title>
+    <style>
+        body {
+            font-family: 'Arial Black', sans-serif;
+            margin: 0;
+            padding: 0;
+            font-size: 20px;
+            background: url("black.jpg") no-repeat center center fixed;
+            background-size: cover;
+            color: #000000c9;
+        }
+
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            z-index: 1;
+        }
+
+        .logo {
+            width: 350px;
+            height: auto;
+            opacity: 1;
+        }
+
+        .tabs {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        .tab {
+            padding: 10px 20px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.3s;
+            font-size: 14px;
+        }
+
+        .tab:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="content">
+        <div class="header">
+            <img class="logo" src="logoexploraprincipal.png" alt="Logo de la Empresa">
+            <h1>Bienvenido a ExploraEducativa</h1>
+            <p>ExploraEducativa es un espacio en línea diseñado para fomentar el aprendizaje y la exploración tanto para niños como para adultos mayores.</p>
+        </div>
+
+        <div class="tabs">
+            <a href="niños.html" class="tab" onmouseover="highlightTab(this)" onmouseout="removeHighlight(this)">Niños</a>
+            <a href="ancianos.html" class="tab" onmouseover="highlightTab(this)" onmouseout="removeHighlight(this)">Adultos Mayores</a>
+        </div>
+    </div>
+
+    <script>
+        // Función para resaltar la pestaña al pasar el mouse sobre ella
+        function highlightTab(tab) {
+            tab.style.backgroundColor = "#0056b3"; // Cambia el color de fondo al resaltar
+        }
+
+        // Función para eliminar el resaltado al quitar el mouse de la pestaña
+        function removeHighlight(tab) {
+            tab.style.backgroundColor = "#007bff"; // Restaura el color de fondo original
+        }
+    </script>
+
+</body>
+</html>
